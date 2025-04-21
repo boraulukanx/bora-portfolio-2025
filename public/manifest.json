@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Bora Ulukan",
+  "name": "Bora Ulukan | Full Stack Developer & 5G Core Engineer",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#050816",
+  "background_color": "#050816",
+  "description": "Portfolio showcasing Bora Ulukan's skills as a Junior Full Stack Developer and 5G Core Engineer"
 }
