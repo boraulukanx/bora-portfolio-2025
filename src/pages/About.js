@@ -40,25 +40,48 @@ const About = () => {
       title: "Full Stack Developer",
       icon: "💻",
       description:
-        "I build responsive web applications using React, Node.js, and modern frameworks to create seamless user experiences.",
+        "I create modern web applications with React, Node.js, Express, and MongoDB, focusing on responsive design using Tailwind CSS, RESTful APIs, and efficient database management to deliver complete end-to-end solutions.",
     },
     {
       title: "5G Core Engineer",
       icon: "📡",
       description:
-        "I design and implement 5G core network solutions, focusing on network function virtualization and service-based architecture.",
+        "As a 5G Core Engineer at Servlane, I deploy and configure advanced network infrastructure, implement network function virtualization (NFV), and optimize network performance to support next-generation telecommunications.",
     },
     {
-      title: "Backend Developer",
+      title: "Java Developer",
       icon: "🔧",
       description:
-        "I create robust server-side applications with Node.js, Express, and MongoDB for scalable and efficient data management.",
+        "I develop applications using Java, MySQL, and NetBeans to create database-driven programs and enterprise solutions. I integrate these applications with cloud services to enhance scalability, availability, and performance across different platforms.",
     },
     {
-      title: "Frontend Designer",
+      title: "Technology Enthusiast",
       icon: "🎨",
       description:
-        "I design intuitive and visually appealing user interfaces that enhance user experience and engagement.",
+        "I'm passionate about Cloud Engineering, Cybersecurity, DevOps, Full Stack Development, and Networking. I continuously explore these fields to expand my knowledge and stay current with the latest technologies and best practices.",
+    },
+  ];
+
+  const interests = [
+    {
+      title: "Cloud Computing",
+      icon: "☁️",
+    },
+    {
+      title: "Cybersecurity",
+      icon: "🔒",
+    },
+    {
+      title: "DevOps",
+      icon: "🔄",
+    },
+    {
+      title: "Full Stack Development",
+      icon: "⚛️",
+    },
+    {
+      title: "Networking",
+      icon: "🌐",
     },
   ];
 
@@ -124,12 +147,17 @@ const About = () => {
           variants={fadeIn("left", "tween", 0.2, 1)}
           className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I'm a junior developer with expertise in JavaScript and
-          telecommunications technologies, specializing in frameworks like
-          React, Node.js, and 5G core networks. I'm a quick learner and
-          collaborate closely with teams to create efficient, scalable solutions
-          that bridge web development and telecommunications infrastructure.
-          Let's work together to bring innovative technology solutions to life!
+          I'm a Junior Full Stack Developer and 5G Core Engineer with a 2.1 in
+          Computer Science from the University of Surrey. In my role at
+          Servlane, I work with cutting-edge 5G network infrastructure, focusing
+          on deployment, configuration, and optimization of core network
+          functions. This includes implementing virtualized network elements,
+          configuring hardware platforms, and ensuring seamless integration
+          between various network components. On the development side, I create
+          end-to-end web solutions, building responsive frontends with React and
+          robust backends with Node.js. I'm particularly passionate about
+          bridging the gap between telecommunications and web technologies to
+          create innovative solutions.
         </motion.p>
 
         <div className="mt-20 flex flex-wrap gap-10">
@@ -148,6 +176,13 @@ const About = () => {
           </h2>
 
           <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+            {/* Web Development Skills */}
+            <div className="col-span-full mb-4">
+              <h3 className="text-white text-[20px] font-bold mb-2">
+                Web Development
+              </h3>
+              <div className="h-0.5 w-full bg-secondary/20 mb-6"></div>
+            </div>
             {[
               "HTML5",
               "CSS3",
@@ -156,21 +191,21 @@ const About = () => {
               "Node.js",
               "Express",
               "MongoDB",
-              "5G Core",
-              "Network Functions",
               "RESTful APIs",
               "Git",
-              "Docker",
-              "CI/CD",
               "Tailwind CSS",
-              "Framer Motion",
+              "MySQL",
+              "Java",
+              "Python",
+              "AWS",
+              "Google Cloud",
             ].map((skill, index) => (
               <motion.div
-                key={skill}
+                key={`web-${skill}`}
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{
-                  delay: index * 0.1,
+                  delay: index * 0.05,
                   duration: 0.5,
                   ease: "easeInOut",
                 }}
@@ -178,6 +213,77 @@ const About = () => {
                 className="bg-tertiary rounded-xl p-4 h-[100px] flex items-center justify-center"
               >
                 <p className="text-white text-center font-medium">{skill}</p>
+              </motion.div>
+            ))}
+
+            {/* 5G Core Skills */}
+            <div className="col-span-full mt-8 mb-4">
+              <h3 className="text-white text-[20px] font-bold mb-2">
+                5G Core Engineering
+              </h3>
+              <div className="h-0.5 w-full bg-secondary/20 mb-6"></div>
+            </div>
+            {[
+              "5G Core Integration",
+              "Network Commissioning",
+              "Firmware Upgrades",
+              "Linux System Administration",
+              "Remote Server Management (iLO / iDRAC)",
+              "CNIS",
+              "NFVI",
+              "DCGW",
+              "IPWorks",
+              "TMA",
+              "ENIQ",
+              "Physical Infrastructure Installation",
+              "Network Troubleshooting",
+              "Hardware Configuration",
+              "Software Patching",
+            ].map((skill, index) => (
+              <motion.div
+                key={`telecom-${skill}`}
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: index * 0.05,
+                  duration: 0.5,
+                  ease: "easeInOut",
+                }}
+                whileHover={{ y: -5, scale: 1.05 }}
+                className="bg-tertiary rounded-xl p-4 h-[100px] flex items-center justify-center"
+              >
+                <p className="text-white text-center font-medium">{skill}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Areas of Interest section */}
+        <motion.div
+          variants={fadeIn("up", "tween", 0.4, 1)}
+          className="mt-16 mb-20"
+        >
+          <p className="text-secondary uppercase tracking-wider text-[14px]">
+            What I'm Passionate About
+          </p>
+          <h2 className="text-white font-black md:text-[48px] sm:text-[40px] xs:text-[30px] text-[24px] mt-2 mb-12">
+            Areas of Interest
+          </h2>
+
+          <div className="flex flex-wrap justify-center gap-8">
+            {interests.map((interest, index) => (
+              <motion.div
+                key={interest.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                whileHover={{ y: -10, scale: 1.05 }}
+                className="bg-tertiary p-8 rounded-xl w-[200px] h-[200px] flex flex-col items-center justify-center shadow-lg"
+              >
+                <div className="text-5xl mb-4">{interest.icon}</div>
+                <h3 className="text-white text-center font-bold text-[18px]">
+                  {interest.title}
+                </h3>
               </motion.div>
             ))}
           </div>

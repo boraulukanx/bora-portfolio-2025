@@ -81,10 +81,12 @@ const Home = () => {
                 variants={fadeIn("right", "tween", 0.3, 1)}
                 className="text-white-100 mt-6 text-[17px] max-w-3xl leading-[30px]"
               >
-                I develop web applications, user interfaces, and backend
-                services, specializing in both modern web technologies and 5G
-                core network solutions. Passionate about creating robust and
-                scalable systems that solve real-world problems.
+                Currently working as a 5G Core Engineer at Servlane UK, with a
+                2.1 Computer Science degree from the University of Surrey. I
+                develop web applications, user interfaces, and backend services,
+                combining modern web technologies and 5G core network solutions
+                to create robust and scalable systems that solve real-world
+                problems.
               </motion.p>
 
               <motion.div
@@ -114,7 +116,7 @@ const Home = () => {
                 <div className="w-[180px] h-[180px] rounded-full border-2 border-secondary p-1 shadow-xl shadow-cyan-500/20 overflow-hidden">
                   <div className="w-full h-full rounded-full overflow-hidden">
                     <img
-                      src="https://randomuser.me/api/portraits/men/40.jpg"
+                      src="https://media.licdn.com/dms/image/v2/D4E03AQFPvJG_zNg4ig/profile-displayphoto-shrink_200_200/B4EZZV3Z3EHkAc-/0/1745197311209?e=1750896000&v=beta&t=jQWnLu3bwLcv2PMObXploX_6miFdZVYvOKbCIBjmLLw"
                       alt="Bora Ulukan"
                       className="w-full h-full object-cover transition-all duration-300 hover:scale-110"
                     />
@@ -204,14 +206,15 @@ const Home = () => {
                 </svg>
               </div>
               <h3 className="text-white font-bold text-[24px] mb-4">
-                Web Development
+                Full Stack Web Development
               </h3>
               <p className="text-secondary text-center text-[16px] leading-[28px]">
-                Developing responsive and interactive web applications using
-                modern JavaScript frameworks like React, with a focus on
-                performance optimization and clean architecture. I ensure
-                seamless user experiences across all devices while maintaining
-                high code quality standards.
+                Creating complete web applications by mastering both frontend
+                and backend technologies. I design responsive user interfaces
+                with React while implementing robust server-side logic with
+                Node.js and database management with MongoDB. This end-to-end
+                approach allows me to deliver cohesive, scalable solutions with
+                seamless integration between all system components.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-2">
                 <span className="px-4 py-2 bg-black-100 text-white rounded-full text-sm">
@@ -255,24 +258,24 @@ const Home = () => {
                 5G Core Engineering
               </h3>
               <p className="text-secondary text-center text-[16px] leading-[28px]">
-                Specializing in 5G core network architecture, with expertise in
-                designing and implementing virtualized network functions (VNFs)
-                and service-based architecture. I work on integration of
-                cloud-native principles in telecommunications infrastructure to
-                enable next-generation mobile services.
+                Working with 5G core network architectures to design and
+                implement next-generation telecommunications systems. My
+                expertise in network protocols, virtualization, and cloud
+                infrastructure enables me to develop scalable and reliable 5G
+                core components.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-2">
                 <span className="px-4 py-2 bg-black-100 text-white rounded-full text-sm">
                   Network Functions
                 </span>
                 <span className="px-4 py-2 bg-black-100 text-white rounded-full text-sm">
-                  NFV
+                  Virtualization
                 </span>
                 <span className="px-4 py-2 bg-black-100 text-white rounded-full text-sm">
-                  Cloud Native
+                  Kubernetes
                 </span>
                 <span className="px-4 py-2 bg-black-100 text-white rounded-full text-sm">
-                  SBA
+                  Microservices
                 </span>
               </div>
             </motion.div>
@@ -298,16 +301,16 @@ const Home = () => {
               {[
                 { name: "React", icon: "⚛️" },
                 { name: "Node.js", icon: "🟢" },
-                { name: "MongoDB", icon: "🍃" },
-                { name: "Tailwind", icon: "🌊" },
-                { name: "5G Core", icon: "📡" },
-                { name: "Docker", icon: "🐳" },
-                { name: "Git", icon: "🔄" },
                 { name: "Express", icon: "🚂" },
-                { name: "REST API", icon: "🔌" },
-                { name: "JavaScript", icon: "📜" },
-                { name: "TypeScript", icon: "🔷" },
-                { name: "Cloud Native", icon: "☁️" },
+                { name: "MongoDB", icon: "🍃" },
+                { name: "Java", icon: "☕" },
+                { name: "MySQL", icon: "🐬" },
+                { name: "AWS", icon: "☁️" },
+                { name: "Google Cloud", icon: "🌐" },
+                { name: "Tailwind", icon: "🌊" },
+                { name: "Git", icon: "🔄" },
+                { name: "RESTful APIs", icon: "🔌" },
+                { name: "Python", icon: "🐍" },
               ].map((tech, index) => (
                 <motion.div
                   key={tech.name}
