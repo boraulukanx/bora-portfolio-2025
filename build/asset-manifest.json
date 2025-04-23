@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.42d1d4b4.css",
-    "main.js": "/static/js/main.56848e68.js",
+    "main.css": "/static/css/main.b9ae9e37.css",
+    "main.js": "/static/js/main.caa873db.js",
+    "static/media/logisticsLogo.png": "/static/media/logisticsLogo.98bb7a6b21fe485bb5fc.png",
+    "static/media/bergamaLogo.png": "/static/media/bergamaLogo.d1267608f74cca604ad3.png",
+    "static/media/visionLogo.jpeg": "/static/media/visionLogo.ace1df0019e3b85cb87d.jpeg",
     "index.html": "/index.html",
-    "main.42d1d4b4.css.map": "/static/css/main.42d1d4b4.css.map",
-    "main.56848e68.js.map": "/static/js/main.56848e68.js.map"
+    "main.b9ae9e37.css.map": "/static/css/main.b9ae9e37.css.map",
+    "main.caa873db.js.map": "/static/js/main.caa873db.js.map"
   },
   "entrypoints": [
-    "static/css/main.42d1d4b4.css",
-    "static/js/main.56848e68.js"
+    "static/css/main.b9ae9e37.css",
+    "static/js/main.caa873db.js"
   ]
 }
